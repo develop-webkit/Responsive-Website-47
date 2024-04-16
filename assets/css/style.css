@@ -259,7 +259,7 @@ form label{
 }
 
 .tier-block{
-  padding:6rem 0; 
+  padding:3rem 0 3rem; 
 }
 
 .tier-block h2{
@@ -356,6 +356,89 @@ form label{
 .tier-table-para{
 	display:none;
 }
+
+/*  */
+
+.contact-sec{
+  padding:2rem 0 6rem;
+}
+
+.contact-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/contact-bg.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  min-height: 35rem;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.contact-row::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(84.12deg, rgba(74, 48, 15, .8) 0, rgba(12, 78, 112, .8) 100%);
+}
+
+.contact-col {
+  position: relative;
+  z-index: 9;
+}
+
+.contact-col h4 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.contact-col p {
+  font-weight: 400;
+  max-width: 80rem;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  color:#fff;
+}
+
+.contact-btns {
+  justify-content: center;
+  gap: 1rem;
+}
+.c-btn, .contact-btns {
+  display: flex;
+  align-items: center;
+}
+
+.c-btn, .c-btn:hover {
+  color: #fff;
+}
+
+.c-btn {
+  background: #1993d2;
+  border: 1px solid transparent;
+  padding: 1rem 2.25rem;
+  border-radius: .75rem;
+  gap: .5rem;
+  margin-top: .5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.c-btn:hover, .cc-btn {
+  background: #ff9a1a;
+}
+
+/*  */
 
 
 @media(max-width:1199px){
@@ -487,5 +570,16 @@ form label{
 	body{
 		font-size:1.4rem;
 	}
-	  
+
+  .contact-btns {
+    flex-direction: column;
+  }
+
+  .contact-row {
+    margin: 3rem 0 0;
+  }
+	
+  .contact-col h4 {
+    font-size: 3rem;
+  }  
 }
